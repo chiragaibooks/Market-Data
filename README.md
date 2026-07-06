@@ -1,4 +1,4 @@
-Last updated: 2026-07-06 09:01:54 IST
+Last updated: 2026-07-06 09:16:28 IST
 
 ## 📊 Market Indexes — Summary
 
@@ -62,9 +62,9 @@ Last updated: 2026-07-06 09:01:54 IST
 
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
-| OBV | 92743197.00 | CMF | -0.02 | Acc/Dist | 24181865.75 |
+| OBV | 82780112.00 | CMF | -0.02 | Acc/Dist | 16952222.62 |
 | MFI | 54.05 | Force Idx | 843876.24 | EOM | 679.38 |
-| VPT | 100683.40 | NVI | 1004.08 | VWAP | 24267.90 |
+| VPT | 96848.71 | NVI | 1003.35 | VWAP | 24267.90 |
 | Chg % | 0.01 |  |  |  |  |
 
 
@@ -120,9 +120,9 @@ Last updated: 2026-07-06 09:01:54 IST
 
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
-| OBV | 6581464.00 | CMF | -0.01 | Acc/Dist | 21659001.90 |
+| OBV | -1680621.00 | CMF | -0.01 | Acc/Dist | 15156158.33 |
 | MFI | 59.12 | Force Idx | 5040285.43 | EOM | 29307.27 |
-| VPT | 21744.79 | NVI | 989.98 | VWAP | 57949.61 |
+| VPT | 20808.60 | NVI | 989.82 | VWAP | 57949.61 |
 | Chg % | 0.03 |  |  |  |  |
 
 
@@ -236,9 +236,9 @@ Last updated: 2026-07-06 09:01:54 IST
 
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
-| OBV | 63076.00 | CMF | -0.41 | Acc/Dist | 17296.28 |
+| OBV | 65684.00 | CMF | -0.41 | Acc/Dist | 24817.86 |
 | MFI | 57.54 | Force Idx | -2820.70 | EOM | -702386.63 |
-| VPT | 30.57 | NVI | 1010.22 | VWAP | 17774.73 |
+| VPT | 20.71 | NVI | 1009.74 | VWAP | 17774.73 |
 | Chg % | -0.01 |  |  |  |  |
 
 
@@ -294,8 +294,8 @@ Last updated: 2026-07-06 09:01:54 IST
 
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
-| OBV | 82562.00 | CMF | -0.27 | Acc/Dist | 22164.46 |
+| OBV | 82958.00 | CMF | -0.27 | Acc/Dist | 28367.91 |
 | MFI | 73.78 | Force Idx | 268.36 | EOM | 8087741.93 |
-| VPT | 18.69 | NVI | 1006.35 | VWAP | 26874.63 |
+| VPT | 17.93 | NVI | 1007.25 | VWAP | 26874.63 |
 | Chg % | 0.02 |  |  |  |  |
 
