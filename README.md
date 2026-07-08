@@ -1,4 +1,4 @@
-Last updated: 2026-07-08 19:32:41 IST
+Last updated: 2026-07-08 19:46:34 IST
 
 ## 📊 Market Indexes — Summary
 
@@ -255,7 +255,7 @@ Last updated: 2026-07-08 19:32:41 IST
 | SMA 5 | 26343.70 | SMA 10 | 26353.69 | SMA 20 | 26343.55 |
 | SMA 50 | 26307.14 | SMA 100 | 26360.25 | SMA 200 | 26564.30 |
 | EMA 5 | 26346.61 | EMA 10 | 26347.25 | EMA 20 | 26339.73 |
-| EMA 50 | 26336.63 | EMA 100 | 26394.80 | EMA 200 | 26514.12 |
+| EMA 50 | 26336.63 | EMA 100 | 26394.81 | EMA 200 | 26514.20 |
 | WMA 10 | 26348.46 | WMA 20 | 26349.60 |  |  |
 
 **⚡ Momentum & Trend**
@@ -294,7 +294,7 @@ Last updated: 2026-07-08 19:32:41 IST
 
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
-| OBV | 67271.00 | CMF | 0.34 | Acc/Dist | 81614.96 |
+| OBV | 67175.00 | CMF | 0.34 | Acc/Dist | 81658.05 |
 | MFI | 72.90 | Force Idx | 4120.46 | EOM | 3940269.60 |
 | VPT | 34.47 | NVI | 999.43 | VWAP | 26348.77 |
 | Chg % | 0.02 |  |  |  |  |
