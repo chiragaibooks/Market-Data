@@ -1,4 +1,4 @@
-Last updated: 2026-07-10 09:01:55 IST
+Last updated: 2026-07-10 09:16:33 IST
 
 ## 📊 Market Indexes — Summary
 
@@ -20,7 +20,7 @@ Last updated: 2026-07-10 09:01:55 IST
 
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
-| SMA 5 | 23977.76 | SMA 10 | 23973.40 | SMA 20 | 23961.12 |
+| SMA 5 | 23977.76 | SMA 10 | 23973.39 | SMA 20 | 23961.12 |
 | SMA 50 | 23988.77 | SMA 100 | 24019.14 | SMA 200 | 24034.89 |
 | EMA 5 | 23977.35 | EMA 10 | 23972.91 | EMA 20 | 23970.66 |
 | EMA 50 | 23986.51 | EMA 100 | 24007.06 | EMA 200 | 24023.26 |
@@ -62,9 +62,9 @@ Last updated: 2026-07-10 09:01:55 IST
 
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
-| OBV | -50289230.00 | CMF | 0.18 | Acc/Dist | -61921570.47 |
+| OBV | -58628826.00 | CMF | 0.18 | Acc/Dist | -54658450.51 |
 | MFI | 80.43 | Force Idx | 3421908.02 | EOM | -1406.76 |
-| VPT | -12982.67 | NVI | 1011.19 | VWAP | 23966.19 |
+| VPT | -13221.47 | NVI | 1011.14 | VWAP | 23966.19 |
 | Chg % | 0.02 |  |  |  |  |
 
 
@@ -120,9 +120,9 @@ Last updated: 2026-07-10 09:01:55 IST
 
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
-| OBV | -39013987.00 | CMF | 0.17 | Acc/Dist | -19254247.53 |
+| OBV | -38676185.00 | CMF | 0.17 | Acc/Dist | -15797177.71 |
 | MFI | 76.50 | Force Idx | 5918443.14 | EOM | 5729.56 |
-| VPT | 16176.36 | NVI | 1002.58 | VWAP | 57296.84 |
+| VPT | 19522.59 | NVI | 1003.49 | VWAP | 57296.84 |
 | Chg % | 0.01 |  |  |  |  |
 
 
@@ -236,9 +236,9 @@ Last updated: 2026-07-10 09:01:55 IST
 
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
-| OBV | 244511.00 | CMF | 0.35 | Acc/Dist | 105663.09 |
+| OBV | 261806.00 | CMF | 0.35 | Acc/Dist | 122876.27 |
 | MFI | 100.00 | Force Idx | 1689.32 | EOM | 1252629.42 |
-| VPT | 88.20 | NVI | 1004.25 | VWAP | 17850.20 |
+| VPT | 91.25 | NVI | 1001.96 | VWAP | 17850.20 |
 | Chg % | 0.00 |  |  |  |  |
 
 
@@ -294,8 +294,8 @@ Last updated: 2026-07-10 09:01:55 IST
 
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
-| OBV | 10306.00 | CMF | -0.29 | Acc/Dist | 78908.49 |
+| OBV | 4345.00 | CMF | -0.29 | Acc/Dist | 72498.46 |
 | MFI | 13.08 | Force Idx | -1036.61 | EOM | -6418857.31 |
-| VPT | 30.00 | NVI | 995.89 | VWAP | 26503.02 |
+| VPT | 36.82 | NVI | 994.30 | VWAP | 26503.02 |
 | Chg % | 0.01 |  |  |  |  |
 
