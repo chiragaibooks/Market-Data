@@ -1,4 +1,4 @@
-Last updated: 2026-07-13 13:16:29 IST
+Last updated: 2026-07-13 13:32:16 IST
 
 ## 📊 Market Indexes — Summary
 
@@ -7,8 +7,8 @@ Last updated: 2026-07-13 13:16:29 IST
 | NIFTY50 | 2026-07-10 09:59 | 24211.65 | 1,747,315 | 53.12 | 24209.30 | 1.88 | 7.46 | 11.50 | 🟡 HOLD |
 | BANKNIFTY | 2026-07-10 09:59 | 58051.00 | 1,318,274 | 51.42 | 58043.27 | -4.95 | 26.42 | 12.18 | 🟡 HOLD |
 | SENSEX | 2026-07-10 09:59 | 77593.11 | 27,320 | 56.44 | 77576.81 | 7.36 | 24.46 | 11.25 | 🟡 HOLD |
-| MIDCAPNIFTY | 2026-07-13 13:13 | 18057.65 | 1 | 62.31 | 18053.29 | 3.89 | 4.10 | 31.22 | 🟡 HOLD |
-| FINNIFTY | 2026-07-13 13:15 | 26777.65 | 2 | 47.14 | 26783.31 | 1.33 | 11.97 | 18.66 | 🟡 HOLD |
+| MIDCAPNIFTY | 2026-07-13 13:30 | 18035.70 | 2,625 | 35.44 | 18044.40 | -5.04 | 4.37 | 34.19 | 🔴 SELL |
+| FINNIFTY | 2026-07-13 13:30 | 26747.00 | 562 | 38.44 | 26764.40 | -10.30 | 12.40 | 27.50 | 🔴 SELL |
 
 ---
 
@@ -62,9 +62,9 @@ Last updated: 2026-07-13 13:16:29 IST
 
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
-| OBV | -72466314.00 | CMF | 0.13 | Acc/Dist | -77571984.41 |
+| OBV | -71042137.00 | CMF | 0.13 | Acc/Dist | -78381008.91 |
 | MFI | 54.58 | Force Idx | 291620.57 | EOM | -1466.75 |
-| VPT | 12913.02 | NVI | 1007.82 | VWAP | 24207.68 |
+| VPT | 12914.84 | NVI | 1008.07 | VWAP | 24207.68 |
 | Chg % | -0.00 |  |  |  |  |
 
 
@@ -120,9 +120,9 @@ Last updated: 2026-07-13 13:16:29 IST
 
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
-| OBV | -13236484.00 | CMF | -0.05 | Acc/Dist | -17583714.51 |
+| OBV | -13469587.00 | CMF | -0.05 | Acc/Dist | -17904658.21 |
 | MFI | 53.85 | Force Idx | 1094681.98 | EOM | -13380.66 |
-| VPT | 20616.06 | NVI | 999.43 | VWAP | 58035.75 |
+| VPT | 20801.70 | NVI | 999.59 | VWAP | 58035.75 |
 | Chg % | 0.01 |  |  |  |  |
 
 
@@ -178,124 +178,124 @@ Last updated: 2026-07-13 13:16:29 IST
 
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
-| OBV | 546022.00 | CMF | 0.15 | Acc/Dist | -6672528.90 |
+| OBV | -1805989.00 | CMF | 0.15 | Acc/Dist | -7429769.84 |
 | MFI | 56.77 | Force Idx | 17234.95 | EOM | -1748895.68 |
-| VPT | -1681.08 | NVI | 980.73 | VWAP | 77573.81 |
+| VPT | -1802.33 | NVI | 980.72 | VWAP | 77573.81 |
 | Chg % | -0.00 |  |  |  |  |
 
 
 ---
 
-### MIDCAPNIFTY &nbsp; 🟡 HOLD
+### MIDCAPNIFTY &nbsp; 🔴 SELL
 
-> 2026-07-13 13:13 &nbsp;|&nbsp; O: 18059.35 &nbsp; H: 18060.80 &nbsp; L: 18057.65 &nbsp; C: **18057.65** &nbsp;|&nbsp; Vol: 1
+> 2026-07-13 13:30 &nbsp;|&nbsp; O: 18031.75 &nbsp; H: 18036.35 &nbsp; L: 18031.35 &nbsp; C: **18035.70** &nbsp;|&nbsp; Vol: 2,625
 
 **📈 Moving Averages**
 
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
-| SMA 5 | 18057.78 | SMA 10 | 18055.03 | SMA 20 | 18053.99 |
-| SMA 50 | 18042.61 | SMA 100 | 18028.31 | SMA 200 | 18020.57 |
-| EMA 5 | 18057.37 | EMA 10 | 18055.89 | EMA 20 | 18053.29 |
-| EMA 50 | 18044.42 | EMA 100 | 18034.59 | EMA 200 | 18026.10 |
-| WMA 10 | 18056.55 | WMA 20 | 18054.54 |  |  |
+| SMA 5 | 18032.87 | SMA 10 | 18039.88 | SMA 20 | 18048.99 |
+| SMA 50 | 18049.40 | SMA 100 | 18035.15 | SMA 200 | 18023.81 |
+| EMA 5 | 18034.84 | EMA 10 | 18039.15 | EMA 20 | 18044.40 |
+| EMA 50 | 18044.85 | EMA 100 | 18037.96 | EMA 200 | 18029.33 |
+| WMA 10 | 18036.23 | WMA 20 | 18043.56 |  |  |
 
 **⚡ Momentum & Trend**
 
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
-| MACD | 3.89 | MACD Signal | 4.06 | MACD Diff | -0.18 |
-| ADX | 31.22 | ADX+ | 28.12 | ADX- | 12.40 |
-| RSI 7 | 62.63 | RSI 14 | 62.31 | RSI 21 | 62.41 |
-| Stoch %K | 76.27 | Stoch %D | 85.00 | ROC | 0.06 |
-| Williams %R | -23.73 | CCI | 106.37 | DPO | -2.89 |
-| AO | 8.68 | KAMA | 18056.33 | PPO | 0.02 |
-| TSI | 24.03 | Ult. Osc | 47.47 |  |  |
+| MACD | -5.04 | MACD Signal | -2.40 | MACD Diff | -2.64 |
+| ADX | 34.19 | ADX+ | 15.91 | ADX- | 35.84 |
+| RSI 7 | 34.23 | RSI 14 | 35.44 | RSI 21 | 40.15 |
+| Stoch %K | 20.93 | Stoch %D | 10.05 | ROC | -0.11 |
+| Williams %R | -79.07 | CCI | -109.65 | DPO | 8.16 |
+| AO | -16.94 | KAMA | 18035.30 | PPO | -0.03 |
+| TSI | -29.17 | Ult. Osc | 28.33 |  |  |
 
 **🎯 Trend Indicators**
 
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
-| Aroon Up | 16.00 | Aroon Down | 0.00 | Aroon Ind | 16.00 |
-| Vortex+ | 1.11 | Vortex- | 0.86 | Mass Index | 24.34 |
-| TRIX | 0.00 | STC | 64.41 | DPO | -2.89 |
-| PSAR | 18049.44 | Ichi A | 18054.85 | Ichi B | 18043.23 |
-| Ichi Base | 18054.53 | Ichi Conv | 18055.17 |  |  |
+| Aroon Up | 44.00 | Aroon Down | 92.00 | Aroon Ind | -48.00 |
+| Vortex+ | 0.58 | Vortex- | 1.40 | Mass Index | 25.00 |
+| TRIX | -0.00 | STC | 0.01 | DPO | 8.16 |
+| PSAR | 18044.60 | Ichi A | 18043.29 | Ichi B | 18046.30 |
+| Ichi Base | 18045.52 | Ichi Conv | 18041.05 |  |  |
 
 **📊 Volatility & Channels**
 
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
-| ATR | 4.10 | Ulcer Idx | 0.06 | BB Upper | 18060.81 |
-| BB Mid | 18053.99 | BB Lower | 18047.16 | BB %B | 0.77 |
-| BB Width | 0.08 | KC Upper | 18057.96 | KC Mid | 18054.12 |
-| KC Lower | 18050.29 | DC Upper | 18065.15 | DC Mid | 18055.38 |
-| DC Lower | 18045.60 |  |  |  |  |
+| ATR | 4.37 | Ulcer Idx | 0.10 | BB Upper | 18070.30 |
+| BB Mid | 18048.99 | BB Lower | 18027.67 | BB %B | 0.19 |
+| BB Width | 0.24 | KC Upper | 18053.65 | KC Mid | 18049.48 |
+| KC Lower | 18045.31 | DC Upper | 18062.10 | DC Mid | 18045.52 |
+| DC Lower | 18028.95 |  |  |  |  |
 
 **💹 Volume Indicators**
 
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
-| OBV | 654498.00 | CMF | -0.10 | Acc/Dist | 549579.01 |
-| MFI | 46.62 | Force Idx | -48.35 | EOM | -78759765.62 |
-| VPT | 163.74 | NVI | 1002.82 | VWAP | 18051.21 |
-| Chg % | -0.01 |  |  |  |  |
+| OBV | 646721.00 | CMF | -0.48 | Acc/Dist | 538205.40 |
+| MFI | 22.30 | Force Idx | -1780.64 | EOM | 447544.64 |
+| VPT | 161.69 | NVI | 1002.82 | VWAP | 18039.50 |
+| Chg % | 0.03 |  |  |  |  |
 
 
 ---
 
-### FINNIFTY &nbsp; 🟡 HOLD
+### FINNIFTY &nbsp; 🔴 SELL
 
-> 2026-07-13 13:15 &nbsp;|&nbsp; O: 26789.30 &nbsp; H: 26790.30 &nbsp; L: 26772.40 &nbsp; C: **26777.65** &nbsp;|&nbsp; Vol: 2
+> 2026-07-13 13:30 &nbsp;|&nbsp; O: 26735.40 &nbsp; H: 26747.80 &nbsp; L: 26733.25 &nbsp; C: **26747.00** &nbsp;|&nbsp; Vol: 562
 
 **📈 Moving Averages**
 
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
-| SMA 5 | 26784.42 | SMA 10 | 26784.45 | SMA 20 | 26782.53 |
-| SMA 50 | 26779.10 | SMA 100 | 26753.60 | SMA 200 | 26753.82 |
-| EMA 5 | 26783.53 | EMA 10 | 26783.76 | EMA 20 | 26783.31 |
-| EMA 50 | 26775.97 | EMA 100 | 26765.19 | EMA 200 | 26758.11 |
-| WMA 10 | 26784.87 | WMA 20 | 26782.59 |  |  |
+| SMA 5 | 26743.45 | SMA 10 | 26756.56 | SMA 20 | 26770.69 |
+| SMA 50 | 26778.79 | SMA 100 | 26758.76 | SMA 200 | 26756.77 |
+| EMA 5 | 26746.22 | EMA 10 | 26754.49 | EMA 20 | 26764.40 |
+| EMA 50 | 26770.21 | EMA 100 | 26765.06 | EMA 200 | 26759.12 |
+| WMA 10 | 26749.91 | WMA 20 | 26762.19 |  |  |
 
 **⚡ Momentum & Trend**
 
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
-| MACD | 1.33 | MACD Signal | 1.87 | MACD Diff | -0.54 |
-| ADX | 18.66 | ADX+ | 21.82 | ADX- | 18.79 |
-| RSI 7 | 42.11 | RSI 14 | 47.14 | RSI 21 | 49.63 |
-| Stoch %K | 34.39 | Stoch %D | 53.98 | ROC | 0.02 |
-| Williams %R | -65.61 | CCI | -24.56 | DPO | -9.38 |
-| AO | 1.75 | KAMA | 26783.09 | PPO | 0.00 |
-| TSI | 3.20 | Ult. Osc | 55.51 |  |  |
+| MACD | -10.30 | MACD Signal | -6.05 | MACD Diff | -4.26 |
+| ADX | 27.50 | ADX+ | 13.41 | ADX- | 32.41 |
+| RSI 7 | 37.53 | RSI 14 | 38.44 | RSI 21 | 41.29 |
+| Stoch %K | 34.83 | Stoch %D | 19.90 | ROC | -0.14 |
+| Williams %R | -65.17 | CCI | -127.86 | DPO | 16.31 |
+| AO | -30.48 | KAMA | 26756.93 | PPO | -0.04 |
+| TSI | -22.70 | Ult. Osc | 52.30 |  |  |
 
 **🎯 Trend Indicators**
 
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
-| Aroon Up | 8.00 | Aroon Down | 56.00 | Aroon Ind | -48.00 |
-| Vortex+ | 1.02 | Vortex- | 0.90 | Mass Index | 25.16 |
-| TRIX | 0.00 | STC | 27.76 | DPO | -9.38 |
-| PSAR | 26770.59 | Ichi A | 26792.82 | Ichi B | 26791.40 |
-| Ichi Base | 26801.27 | Ichi Conv | 26784.38 |  |  |
+| Aroon Up | 20.00 | Aroon Down | 96.00 | Aroon Ind | -76.00 |
+| Vortex+ | 0.75 | Vortex- | 1.23 | Mass Index | 24.96 |
+| TRIX | -0.00 | STC | 0.00 | DPO | 16.31 |
+| PSAR | 26772.95 | Ichi A | 26756.02 | Ichi B | 26779.57 |
+| Ichi Base | 26760.40 | Ichi Conv | 26751.65 |  |  |
 
 **📊 Volatility & Channels**
 
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
-| ATR | 11.97 | Ulcer Idx | 0.12 | BB Upper | 26796.97 |
-| BB Mid | 26782.53 | BB Lower | 26768.09 | BB %B | 0.33 |
-| BB Width | 0.11 | KC Upper | 26793.04 | KC Mid | 26782.22 |
-| KC Lower | 26771.40 | DC Upper | 26797.95 | DC Mid | 26782.90 |
-| DC Lower | 26767.85 |  |  |  |  |
+| ATR | 12.40 | Ulcer Idx | 0.12 | BB Upper | 26805.94 |
+| BB Mid | 26770.69 | BB Lower | 26735.44 | BB %B | 0.16 |
+| BB Width | 0.26 | KC Upper | 26782.75 | KC Mid | 26770.56 |
+| KC Lower | 26758.36 | DC Upper | 26795.20 | DC Mid | 26759.82 |
+| DC Lower | 26724.45 |  |  |  |  |
 
 **💹 Volume Indicators**
 
 | Indicator | Value | Indicator | Value | Indicator | Value |
 |-----------|-------|-----------|-------|-----------|-------|
-| OBV | -23924.00 | CMF | 0.13 | Acc/Dist | 2092.00 |
-| MFI | 48.19 | Force Idx | -334.26 | EOM | -4363220214.84 |
-| VPT | 2.06 | NVI | 990.84 | VWAP | 26780.70 |
-| Chg % | -0.05 |  |  |  |  |
+| OBV | -25988.00 | CMF | -0.33 | Acc/Dist | 606.83 |
+| MFI | 12.97 | Force Idx | -2273.36 | EOM | 23757079.32 |
+| VPT | 0.98 | NVI | 990.94 | VWAP | 26745.56 |
+| Chg % | 0.04 |  |  |  |  |
 
