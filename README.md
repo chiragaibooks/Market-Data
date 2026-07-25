@@ -1,4 +1,4 @@
-Last updated: 2026-07-25 17:16:38 IST
+Last updated: 2026-07-25 17:32:06 IST
 
 ## 📊 Market Indexes — Summary
 
