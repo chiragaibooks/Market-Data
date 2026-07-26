@@ -41,27 +41,15 @@ DB_FILE      = "market_data.db"
 IST          = pytz.timezone("Asia/Kolkata")
 
 INDEX_MAP = {
-    "NIFTY50":     ("NIFTY",      "NSE"),
-    "BANKNIFTY":   ("BANKNIFTY",  "NSE"),
-    "MIDCAPNIFTY": ("MIDCPNIFTY", "NSE"),
-    "FINNIFTY":    ("FINNIFTY",   "NSE"),
-    "SENSEX":      ("SENSEX",     "BSE"),
+    "NIFTY50": ("NIFTY", "NSE"),
 }
 
 YF_MAP = {
-    "NIFTY50":     "^NSEI",
-    "BANKNIFTY":   "^NSEBANK",
-    "MIDCAPNIFTY": "^NSEMDCP50",
-    "FINNIFTY":    "NIFTY_FIN_SERVICE.NS",
-    "SENSEX":      "^BSESN",
+    "NIFTY50": "^NSEI",
 }
 
 VOL_ETF_MAP = {
-    "NIFTY50":     "NIFTYBEES.NS",
-    "BANKNIFTY":   "BANKBEES.NS",
-    "MIDCAPNIFTY": "MIDSELIETF.NS",
-    "FINNIFTY":    "NIF100BEES.NS",
-    "SENSEX":      "SENSEXETF.NS",
+    "NIFTY50": "NIFTYBEES.NS",
 }
 
 INDEXES = []
@@ -217,20 +205,19 @@ def insert_data(symbol: str, df: pd.DataFrame):
     logger.info("[%s] Inserted %d candles", symbol, len(df))
 
 
-def latest_row(symbol: str):
+def latest_rows(symbol: str, n: int = 10) -> pd.DataFrame:
     try:
         with sqlite3.connect(DB_FILE) as conn:
             df = pd.read_sql_query(
-                "SELECT * FROM indexes WHERE stock_name=? ORDER BY datetime DESC LIMIT 10",
-                conn, params=(symbol,)
+                "SELECT * FROM indexes WHERE stock_name=? ORDER BY datetime DESC LIMIT ?",
+                conn, params=(symbol, n)
             )
         if df.empty:
-            return None
-        with_vol = df[df["volume"] > 0]
-        return with_vol.iloc[0] if not with_vol.empty else df.iloc[0]
+            return pd.DataFrame()
+        return df.iloc[::-1].reset_index(drop=True)  # oldest → newest
     except Exception:
-        logger.exception("Failed to read latest row for %s", symbol)
-        return None
+        logger.exception("Failed to read latest rows for %s", symbol)
+        return pd.DataFrame()
 
 
 # ==========================================================
@@ -483,9 +470,10 @@ def update_readme():
         f.write("| Symbol | Time (IST) | Close | Volume | RSI(14) | EMA20 | MACD | ATR | ADX | Signal |\n")
         f.write("|--------|-----------|-------|--------|---------|-------|------|-----|-----|--------|\n")
         for sym in INDEXES:
-            row = latest_row(sym)
-            if row is None:
+            rows = latest_rows(sym)
+            if rows.empty:
                 continue
+            row = rows.iloc[-1]
             signal = generate_signal(row)
             volume = int(row["volume"]) if pd.notna(row["volume"]) else 0
             f.write(
@@ -496,17 +484,25 @@ def update_readme():
 
         # ── Per Symbol Detail ──────────────────────────────────
         for sym in INDEXES:
-            row = latest_row(sym)
-            if row is None:
+            rows = latest_rows(sym)
+            if rows.empty:
                 continue
+            row = rows.iloc[-1]  # latest row for indicators
             signal = generate_signal(row)
             f.write(f"\n---\n\n### {sym} &nbsp; {ICONS[signal]}\n\n")
-            f.write(f"> {row['datetime']} &nbsp;|&nbsp; "
-                    f"O: {fmt(row['open'])} &nbsp; "
-                    f"H: {fmt(row['high'])} &nbsp; "
-                    f"L: {fmt(row['low'])} &nbsp; "
-                    f"C: **{fmt(row['close'])}** &nbsp;|&nbsp; "
-                    f"Vol: {int(row['volume']):,}\n\n")
+
+            # ── Last 10 Candles ────────────────────────────────
+            f.write("**🕯️ Last 10 Candles**\n\n")
+            f.write("| Time (IST) | Open | High | Low | Close | Volume | Signal |\n")
+            f.write("|-----------|------|------|-----|-------|--------|--------|\n")
+            for _, r in rows.iterrows():
+                sig = generate_signal(r)
+                vol = int(r["volume"]) if pd.notna(r["volume"]) else 0
+                f.write(
+                    f"| {r['datetime']} | {fmt(r['open'])} | {fmt(r['high'])} "
+                    f"| {fmt(r['low'])} | {fmt(r['close'])} | {vol:,} | {ICONS[sig]} |\n"
+                )
+            f.write("\n")
 
             sections = [
                 ("📈 Moving Averages", [

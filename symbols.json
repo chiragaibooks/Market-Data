@@ -1,9 +1,5 @@
 {
     "Indexes": [
-        "NIFTY50",
-        "BANKNIFTY",
-        "SENSEX",
-        "MIDCAPNIFTY",
-        "FINNIFTY"
+        "NIFTY50"
     ]
 }
