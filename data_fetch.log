@@ -70003,3 +70003,7 @@ websocket._exceptions.WebSocketTimeoutException: Connection timed out
 2026-07-26 21:15:57,779 - INFO - [NIFTY50] TV fetched 1875 rows
 2026-07-26 21:15:58,213 - INFO - [NIFTY50] Inserted 225 candles
 2026-07-26 21:16:00,220 - INFO - Cycle complete. README updated.
+2026-07-26 21:31:51,210 - INFO - Starting fetch cycle
+2026-07-26 21:31:51,780 - INFO - [NIFTY50] TV fetched 1875 rows
+2026-07-26 21:31:52,540 - INFO - [NIFTY50] Inserted 225 candles
+2026-07-26 21:31:54,549 - INFO - Cycle complete. README updated.
