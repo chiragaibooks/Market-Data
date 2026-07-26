@@ -69919,3 +69919,7 @@ websocket._exceptions.WebSocketTimeoutException: Connection timed out
 2026-07-26 14:46:28,783 - INFO - [FINNIFTY] yfinance fetched 1875 rows
 2026-07-26 14:46:29,576 - INFO - [FINNIFTY] Inserted 1875 candles
 2026-07-26 14:46:31,611 - INFO - Cycle complete. README updated.
+2026-07-26 16:20:42,264 - INFO - Starting fetch cycle
+2026-07-26 16:20:42,703 - INFO - [NIFTY50] TV fetched 1875 rows
+2026-07-26 16:20:43,489 - INFO - [NIFTY50] Inserted 225 candles
+2026-07-26 16:20:45,498 - INFO - Cycle complete. README updated.
