@@ -286,10 +286,10 @@ def fetch_yf(label: str) -> pd.DataFrame:
 
 
 def fetch_candles(tv: TvDatafeed, tv_symbol: str, exchange: str, label: str) -> pd.DataFrame:
-    df = fetch_tv(tv, tv_symbol, exchange, label)
+    df = fetch_yf(label)
     if df.empty:
-        logger.info("[%s] Falling back to yfinance", label)
-        df = fetch_yf(label)
+        logger.info("[%s] yfinance empty, falling back to TradingView", label)
+        df = fetch_tv(tv, tv_symbol, exchange, label)
     if df.empty:
         logger.warning("[%s] No data from any source", label)
     return df
