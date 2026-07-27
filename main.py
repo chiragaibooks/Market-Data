@@ -207,10 +207,11 @@ def insert_data(symbol: str, df: pd.DataFrame):
 
 def latest_rows(symbol: str, n: int = 10) -> pd.DataFrame:
     try:
+        today = datetime.now(IST).strftime("%Y-%m-%d")
         with sqlite3.connect(DB_FILE) as conn:
             df = pd.read_sql_query(
-                "SELECT * FROM indexes WHERE stock_name=? ORDER BY datetime DESC LIMIT ?",
-                conn, params=(symbol, n)
+                "SELECT * FROM indexes WHERE stock_name=? AND datetime LIKE ? ORDER BY datetime DESC LIMIT ?",
+                conn, params=(symbol, f"{today}%", n)
             )
         if df.empty:
             return pd.DataFrame()
