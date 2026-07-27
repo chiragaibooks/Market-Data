@@ -22,10 +22,9 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install -r Indexes/requirements.txt
+          pip install -r requirements.txt
 
       - name: Run script
-        working-directory: Indexes
         run: python main.py
 
       - name: Commit and push changes
