@@ -80,6 +80,8 @@ COLS = [
     "obv", "cmf", "acc_dist", "mfi",
     "force_index", "eom", "vpt", "nvi", "vwap",
     "price_change_pct",
+    "pivot", "pivot_r1", "pivot_r2", "pivot_r3",
+    "pivot_s1", "pivot_s2", "pivot_s3",
     "signal", "updated_at",
 ]
 
@@ -144,6 +146,8 @@ _CREATE_SQL = """
         mfi              REAL, force_index     REAL, eom             REAL,
         vpt              REAL, nvi             REAL, vwap            REAL,
         price_change_pct REAL,
+        pivot            REAL, pivot_r1        REAL, pivot_r2        REAL, pivot_r3        REAL,
+        pivot_s1         REAL, pivot_s2        REAL, pivot_s3        REAL,
         signal           TEXT,
         updated_at       TEXT,
         PRIMARY KEY (datetime, stock_name)
@@ -434,6 +438,28 @@ def compute_indicators(df: pd.DataFrame) -> pd.DataFrame:
     # Price change %
     df["price_change_pct"] = _safe(lambda: c.pct_change() * 100)
 
+
+    # Pivot Points (Classic, based on previous day OHLC)
+    try:
+        _tmp = df.copy()
+        _tmp["_date"] = pd.to_datetime(_tmp["datetime"]).dt.date
+        _daily = _tmp.groupby("_date").agg(_ph=("high","max"), _pl=("low","min"), _pc=("close","last"))
+        _daily_prev = _daily.shift(1)
+        _daily_prev.index = pd.to_datetime(_daily_prev.index)
+        _date_idx = pd.to_datetime(_tmp["_date"])
+        _ph = _date_idx.map(_daily_prev["_ph"]).values
+        _pl = _date_idx.map(_daily_prev["_pl"]).values
+        _pc = _date_idx.map(_daily_prev["_pc"]).values
+        _p  = (_ph + _pl + _pc) / 3
+        df["pivot"]    = _p
+        df["pivot_r1"] = 2 * _p - _pl
+        df["pivot_r2"] = _p + (_ph - _pl)
+        df["pivot_r3"] = _ph + 2 * (_p - _pl)
+        df["pivot_s1"] = 2 * _p - _ph
+        df["pivot_s2"] = _p - (_ph - _pl)
+        df["pivot_s3"] = _pl - 2 * (_ph - _p)
+    except Exception:
+        logger.exception("Pivot calculation failed")
     return df
 
 
