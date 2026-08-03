@@ -439,25 +439,26 @@ def compute_indicators(df: pd.DataFrame) -> pd.DataFrame:
     df["price_change_pct"] = _safe(lambda: c.pct_change() * 100)
 
 
-    # Pivot Points (Classic, based on previous day OHLC)
+    # Pivot Points (Classic, based on previous trading day OHLC from DB)
     try:
-        _tmp = df.copy()
-        _tmp["_date"] = pd.to_datetime(_tmp["datetime"]).dt.date
-        _daily = _tmp.groupby("_date").agg(_ph=("high","max"), _pl=("low","min"), _pc=("close","last"))
-        _daily_prev = _daily.shift(1)
-        _daily_prev.index = pd.to_datetime(_daily_prev.index)
-        _date_idx = pd.to_datetime(_tmp["_date"])
-        _ph = _date_idx.map(_daily_prev["_ph"]).values
-        _pl = _date_idx.map(_daily_prev["_pl"]).values
-        _pc = _date_idx.map(_daily_prev["_pc"]).values
-        _p  = (_ph + _pl + _pc) / 3
-        df["pivot"]    = _p
-        df["pivot_r1"] = 2 * _p - _pl
-        df["pivot_r2"] = _p + (_ph - _pl)
-        df["pivot_r3"] = _ph + 2 * (_p - _pl)
-        df["pivot_s1"] = 2 * _p - _ph
-        df["pivot_s2"] = _p - (_ph - _pl)
-        df["pivot_s3"] = _pl - 2 * (_ph - _p)
+        import sqlite3 as _sq
+        _sym = df["stock_name"].iloc[0] if "stock_name" in df.columns else "NIFTY50"
+        _today = str(pd.to_datetime(df["datetime"].iloc[0]).date())
+        with _sq.connect(DB_FILE) as _conn:
+            _prev = _conn.execute(
+                "SELECT MAX(high), MIN(low), close FROM indexes WHERE stock_name=? AND date(datetime) = (SELECT MAX(date(datetime)) FROM indexes WHERE stock_name=? AND date(datetime) < ?) ORDER BY datetime DESC LIMIT 1",
+                (_sym, _sym, _today)
+            ).fetchone()
+        if _prev and all(v is not None for v in _prev):
+            _ph, _pl, _pc = float(_prev[0]), float(_prev[1]), float(_prev[2])
+            _p = (_ph + _pl + _pc) / 3
+            df["pivot"]    = _p
+            df["pivot_r1"] = 2 * _p - _pl
+            df["pivot_r2"] = _p + (_ph - _pl)
+            df["pivot_r3"] = _ph + 2 * (_p - _pl)
+            df["pivot_s1"] = 2 * _p - _ph
+            df["pivot_s2"] = _p - (_ph - _pl)
+            df["pivot_s3"] = _pl - 2 * (_ph - _p)
     except Exception:
         logger.exception("Pivot calculation failed")
     return df
