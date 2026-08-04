@@ -73946,3 +73946,8 @@ websocket._exceptions.WebSocketTimeoutException: Connection timed out
 2026-08-04 02:31:18,643 - INFO - [NIFTY50] yfinance fetched 1871 rows
 2026-08-04 02:31:19,168 - INFO - [NIFTY50] Inserted 1871 candles
 2026-08-04 02:31:21,174 - INFO - Cycle complete. README updated.
+2026-08-04 02:45:54,099 - INFO - Starting fetch cycle
+2026-08-04 02:45:54,375 - INFO - [NIFTY50] yfinance empty, falling back to TradingView
+2026-08-04 02:45:54,728 - INFO - [NIFTY50] TV fetched 1875 rows
+2026-08-04 02:45:55,185 - INFO - [NIFTY50] Inserted 225 candles
+2026-08-04 02:45:57,190 - INFO - Cycle complete. README updated.
