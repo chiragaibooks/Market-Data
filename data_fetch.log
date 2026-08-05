@@ -74606,3 +74606,8 @@ websocket._exceptions.WebSocketTimeoutException: Connection timed out
 2026-08-05 11:15:59,176 - INFO - [NIFTY50] yfinance fetched 1875 rows
 2026-08-05 11:15:59,981 - INFO - [NIFTY50] Inserted 1875 candles
 2026-08-05 11:16:01,990 - INFO - Cycle complete. README updated.
+2026-08-05 11:31:20,572 - INFO - Starting fetch cycle
+2026-08-05 11:31:21,013 - INFO - [NIFTY50] ETF volume merged from NIFTYBEES.NS
+2026-08-05 11:31:21,015 - INFO - [NIFTY50] yfinance fetched 1875 rows
+2026-08-05 11:31:21,805 - INFO - [NIFTY50] Inserted 1875 candles
+2026-08-05 11:31:23,815 - INFO - Cycle complete. README updated.
